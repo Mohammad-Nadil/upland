@@ -19,6 +19,7 @@ import leafRU from "../assets/leaf3.png";
 import leafLU from "../assets/leaf4.png";
 import { delay, motion, useAnimation } from "framer-motion";
 import "../globals.css";
+import Dots from "./Dots";
 
 const Banner = () => {
   const loveControls = useAnimation();
@@ -101,19 +102,6 @@ const Banner = () => {
     leafLDControls,
     pinkLeafControls,
   ]);
-
-  let dots = (
-    <svg
-      width="16"
-      height="6"
-      viewBox="0 0 16 6"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle cx="3" cy="3" r="3" fill="#FF6231" />
-      <circle cx="13" cy="3" r="3" fill="#FF6231" />
-    </svg>
-  );
   return (
     <div className="bannerBg overflow-visible">
       <Container className="flex flex-col sm:flex-row gap-x-7 gap-y-5 pt-14 lg:pt-20 xl:pt-28 items-center overflow-visible">
@@ -125,7 +113,7 @@ const Banner = () => {
         >
           <div className="topText">
             <p className="flex gap-x-4 font-medium text-xs text-primaryRed items-center">
-              {dots}trendy application
+              <Dots/>trendy application
             </p>
             <h2 className="font-bold text-white text-5xl md:text-6xl xl:text-7xl">
               work faster with powerful tools
