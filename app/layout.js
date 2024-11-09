@@ -21,6 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <header>
+        <title>upland</title>
+      </header>
       <body
         className={` overflow-visible ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
