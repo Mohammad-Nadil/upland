@@ -17,9 +17,9 @@ import leafRD from "../assets/leaf1.png";
 import leafLD from "../assets/leaf2.png";
 import leafRU from "../assets/leaf3.png";
 import leafLU from "../assets/leaf4.png";
-import { delay, motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import "../globals.css";
-import Dots from "./Dots";
+import Dots from "../assets/dots.svg";
 
 const Banner = () => {
   const loveControls = useAnimation();
@@ -112,14 +112,14 @@ const Banner = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="topText">
-            <p className="flex gap-x-4 font-medium text-xs text-primaryRed items-center">
-              <Dots/>trendy application
+            <p className="font-roboto flex gap-x-4 font-medium text-xs text-primaryRed items-center">
+              <Image src={Dots} alt="dots"/>trendy application
             </p>
-            <h2 className="font-bold text-white text-5xl md:text-6xl xl:text-7xl">
+            <h2 className="font-darkGro font-bold text-white text-5xl md:text-6xl xl:text-7xl">
               work faster with powerful tools
             </h2>
           </div>
-          <p className="font-medium lg:text-2xl text-white">
+          <p className="font-darkGro font-medium lg:text-2xl text-white">
             Laboris culpa ea incididunt dolore ipsum tempor duis do ullamco
             eiusmod officia magna ad id.
           </p>
@@ -136,7 +136,7 @@ const Banner = () => {
           <div className="overflow-visible relative">
             <div className="aspect-[7/10] relative">
               <div className="phoneMain right-0 absolute w-[90%] h-[90%] z-50">
-                <Image
+                <Image 
                   className="relative z-50"
                   src={phone}
                   alt="../assets/phone.png"

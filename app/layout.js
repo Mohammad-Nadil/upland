@@ -21,9 +21,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <header>
+      <head>
         <title>upland</title>
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +37,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
           rel="stylesheet"
         />
-      </header>
+      </head>
       <body
         className={` overflow-visible ${geistSans.variable} ${geistMono.variable} antialiased`}
       >

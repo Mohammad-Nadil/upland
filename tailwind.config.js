@@ -11,7 +11,15 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primaryRed: "#FF6231",
+        secondary: "#888888",
       },
+    },
+    fontFamily: {
+      darkGro: ["Darker Grotesque", "sans-serif"],
+      roboto: ['"Roboto"', "sans-serif"],
+    },
+    boxShadow: {
+      cardShadow: "0 10px 20px rgba(47, 21, 135 , 0.06)",
     },
   },
   plugins: [],

@@ -6,12 +6,12 @@ import card1 from "../assets/card1.svg";
 import card2 from "../assets/card2.svg";
 import card3 from "../assets/card3.svg";
 import head from "../assets/headText.png";
-import Dots from "./Dots";
+import Dots from "../assets/dots.svg";
 
 const Card = ({ title, describe, src, className, imgClass, textClass }) => {
   return (
     <div
-      className={` card xl:p-8 flex flex-col gap-y-9  xl:gap-y-9  ${className}`}
+      className={` card xl:p-8 flex flex-col gap-y-9  xl:gap-y-9 shadow-cardShadow ${className}`}
     >
       <div
         className={`image w-full aspect-square grid place-content-center !relative z-10  ${imgClass}`}
@@ -20,7 +20,7 @@ const Card = ({ title, describe, src, className, imgClass, textClass }) => {
       </div>
       <div className={` text px-2 flex flex-col gap-y-4 ${textClass}`}>
         <h3 className="font-semibold text-[1.75rem] leading-7 ">{title}</h3>
-        <p className="text-[#88888888]">{describe}</p>
+        <p className="font-roboto text-[#88888888]">{describe}</p>
       </div>
     </div>
   );
@@ -28,13 +28,17 @@ const Card = ({ title, describe, src, className, imgClass, textClass }) => {
 
 const Get = () => {
   return (
-    <div id="get" className="pt-32">
-      <Container className="flex flex-col gap-y-12 pt-5">
+    <div id="get" className=" pt-20 md:pt-32">
+      <Container className="flex flex-col gap-y-12 pt-5 font-darkGro">
         <h2 className="text-5xl w-full text-center font-semibold relative">
           See what you will get with us
-          <div className="headBg absolute bottom-1/2 left-1/2 -translate-x-1/2 -z-10 w-full lg:w-3/4 xl:w-2/3">
+          <div className="headBg absolute top-0 sm:bottom-1/2 left-1/2 -translate-x-1/2 -z-10 w-full lg:w-3/4 xl:w-2/3">
             <Image src={head} alt={head} className="w-full" />
-            <Dots className="absolute top-0 left-1/2 -translate-y-full -translate-x-1/2" />
+            <Image
+              src={Dots}
+              alt={Dots}
+              className="absolute top-0 left-1/2 -translate-y-full -translate-x-1/2"
+            />
           </div>
         </h2>
         <div className="box grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-12 ">
