@@ -5,7 +5,6 @@ import Image from "next/image";
 import card1 from "../assets/card1.svg";
 import card2 from "../assets/card2.svg";
 import card3 from "../assets/card3.svg";
-import cardBg from "../assets/cardBG.png";
 import head from "../assets/headText.png";
 import Dots from "./Dots";
 
